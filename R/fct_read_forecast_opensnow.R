@@ -45,6 +45,6 @@ read_forecast_opensnow <- function(url){
     group_by(date) %>%
     summarise(min = sum(snowfall_min),
               max = sum(snowfall_max),
-              estimate = sum(estimate))
+              estimate = sum(snowfall_estimate))
 
 }
